@@ -1,0 +1,41 @@
+body{
+    margin-top:0%;
+    height: 100%;
+    background-color: blueviolet;
+    background-image: url(../img/floresperez.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+nav{
+    background-color:  #a20a56;
+    padding: 8px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a{
+    display: inline-block;
+    color: beige
+    text-decoration: none;
+    font-weight:bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:yellow;
+}
+nav ul li a:hover{
+    color: rgd(20,31,71)
+}
+.titulo{
+    color:blue;
+    text-align: center;
+
+}
