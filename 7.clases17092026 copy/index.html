@@ -1,36 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1 class="titulo">CREACIACION DE TABLAS</h1>
-    <h2 class="titulo1">TABLA lista DE estudianes</h2>
-    <table>
-        <thead>
-
+    <header>
+        <h1 class="titulo">CREACIÓN DE TABLAS</h1>
+        <h2 class="titulo1">TABLA LISTA DE ESTUDIANTES</h2>
+    </header>
+    
+    <main>
+        <section class="formulario-seccion">
+            <h3>Registrar Estudiante</h3>
             
-                <tr>
-                    <th>Nro</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Fecha de Nacimiento</th>
-                    <th>Edad</th>
-                    <th>Género</th>
-                </tr>
-            </tbody> id="datos"
-            <tr>
-                <th>16</th>
-                <th>Alex</th>
-                <th>Galviz</th>
-                <th>11/03/2010</th>
-                <th>16</th>
-                <th>masculino</th>
-            </tr>
-        </thead>
-    </table>
+            <div class="Control-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre">
+            </div>
+            
+            <div class="Control-formulario">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese el apellido">
+            </div>
+            
+            <div class="Control-formulario">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            </div>
 
+            <div class="Control-formulario">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingrese la edad">
+            </div>
+            
+            <div class="Control-formulario">
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero">
+                    <option value="">Seleccione...</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+            </div>
+            
+            <button type="button" onclick="adicionar()">Adicionar</button>
+        </section>
+        <section class="tabla-seccion">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nro</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody id="datos">
+                    <tr>
+                        <td>1</td>
+                        <td>Alex</td>
+                        <td>Galviz</td>
+                        <td>11/03/2010</td>
+                        <td>16</td>
+                        <td>Masculino</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script/ejemplo1.js"></script>
 </body>
 </html>
+
